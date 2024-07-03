@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-wrapper .color {
+    background-color: rgba(234, 23, 1, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+}
+
+.main-wrapper .color1 {
+    background-color: rgba(254, 176, 2, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+}
+
+.main-wrapper .color2 {
+    background-color: rgba(2, 159, 4, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+}
+
+ul .bg {
+    width: 07px;
+    height: 07px;
+    border-radius: 30px;
+    background-color: red;
+    position: absolute;
+    top: 21px;
+    left: 25px;
+}
+
+
+/* /............................./ */
+
+
+
+.section .card {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 24px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.section .card p {
+    color: rgba(160, 160, 160, 1);
+}
+
+.section .card .week {
+    margin-left: 65px;
+}
+
+.section .card .back {
+    background-color: #171821;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+.section .card1 {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.section .card1 .volume {
+    list-style-image: url('assets/img/Ellipse\ 36.png');
+}
+
+.section .card1 .service {
+    list-style-image: url('assets/img/Ellipse\ 37.png');
+}
+
+
+/* /............................./ */
+
+
+.section1 .card {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.table tr td:hover {
+    background-color: #2B2B36;
+    color: white;
+}
+
+.table td :hover {
+    color: white;
+}
+
+.section1 .table-responsive .progress-bar {
+    background-color: #FCB859;
+}
+
+.section1 .table-responsive .progress-bar1 {
+    background-color: #A9DFD8;
+}
+
+.section1 .table-responsive .progress-bar2 {
+    background-color: #28AEF3;
+}
+
+.section1 .table-responsive .progress-bar3 {
+    background-color: #F2C8ED;
+}
+
+.section1 .table-responsive .progress {
+    background-color: #2B2B36;
+}
+
+
+.section1 .table-responsive .btn-box {
+    background-color: #7d561f53;
+    border-radius: 4px;
+    border: 2px solid #fcb859;
+    color: #fcb859;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.section1 .table-responsive .btn-box1 {
+    background-color: #a9dfd81c;
+    border-radius: 4px;
+    border: 2px solid #A9DFD8;
+    color: #A9DFD8;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.section1 .table-responsive .btn-box2 {
+    background-color: #28aff32d;
+    border-radius: 4px;
+    border: 2px solid #28AEF3;
+    color: #28AEF3;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.section1 .table-responsive .btn-box3 {
+    background-color: #f2c8ed23;
+    border-radius: 4px;
+    border: 2px solid #F2C8ED;
+    color: #F2C8ED;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+}
+
+
+.section1 .card1 {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.section1 .card1 img {
+    height: 175px;
+}
+
+.section1 .card1 .Last {
+    list-style-image: url('assets/img/Ellipse\ 36.png');
+}
+
+.section1 .card1 .this {
+    list-style-image: url('assets/img/Ellipse\ 60.svg');
+}
+
+
+
+/* /............................./ */
+
+
+.section2 .card {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.section2 .card h2 {
+    color: rgba(169, 223, 216, 1);
+    font-weight: 700;
+}
+
+.section2 .card p {
+    color: rgba(135, 136, 140, 1);
+}
+
+
+.section2 .card1 {
+    background-color: rgba(33, 34, 45, 1);
+    padding: 30px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.section2 .card1 .back {
+    padding: 05px 15px;
+    background-color: rgba(23, 24, 33, 1);
+    border-radius: 10px;
+}
+
+.section2 .card1 .new {
+    list-style-image: url('assets/img/Ellipse\ 62.png');
+}
+
+@media screen and (max-width:450px) {}

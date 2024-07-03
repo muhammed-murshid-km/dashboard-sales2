@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>Sales-Management-Dashboard</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/feathericon.min.css">
+	<link rel="stylehseet" href="https://cdn.oesmith.co.uk/morris-0.5.1.css">
+	<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<div class="header">
+			<div class="header-left">
+				<a href="index.html" class="logo">
+					<div class="d-flex mt-5">
+						<div class="color m-sm-1"></div>
+						<div class="color1 m-sm-1"></div>
+						<div class="color2 m-sm-1"></div>
+					</div>
+				</a>
+				<a href="index.html" class="logo logo-small">
+					<div class="d-flex mt-5">
+						<div class="color m-sm-1"></div>
+						<div class="color1 m-sm-1"></div>
+						<div class="color2 m-sm-1"></div>
+					</div>
+				</a>
+			</div>
+			<a href="javascript:void(0);" id="toggle_btn"> <i class="fe fe-text-align-left"></i> </a>
+			<a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
+			<ul class="nav user-menu">
+				<li class="nav-item dropdown noti-dropdown">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fe fe-bell text-light "></i><span class="bg"></span></a>
+
+				</li>
+				<li class="nav-item dropdown has-arrow text-light">
+					<a href="#" class="dropdown-toggle nav-link " data-toggle="dropdown"><span class="user-img">
+							<img class="rounded-circle" src="assets/img/Profile.svg" width="31" alt="Soeng Souy"></span>
+					</a>
+					<div class=" dropdown-menu ">
+						<div class="user-header">
+							<div class="avatar avatar-sm"> <img src="assets/img/Profile.svg" alt="User Image"
+									class="avatar-img rounded-circle "> </div>
+							<div class="user-text">
+								<h6>Soeng Souy</h6>
+								<p class="text-muted mb-0">Administrator</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="top-nav-search">
+				<form>
+					<input type="text" class="form-control" placeholder="Search here">
+					<button class="btn" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="active">
+							<a href="index.html"><i class="bi bi-house-fill"></i><span>Dashboard</span></a>
+						</li>
+						<!-- <li class="list-divider"></li> -->
+						<li class="submenu">
+							<a href="#"><i class="bi bi-person"></i></i> <span>Profile</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-bar-chart"></i> <span>Leaderboard</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-cart3"></i></i> <span>Order</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-handbag"></i><span>Product</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-graph-up"></i> <span>Sales Report</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-chat"></i><span>Message</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-gear"></i><span>Settings</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-star"></i><span>Favourite</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-clock-history"></i><span>History</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="bi bi-box-arrow-right"></i><span>Signout</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrapper mt-5">
+			<section class="section">
+				<div class="content container-fluid mt-4">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="card text-white ">
+								<div class="">
+									<h3 class="card-title text-light">Today's Sales</h3>
+									<p class="card-text">Sales Summary</p>
+									<div class="row mt-5">
+
+										<div class="col-md-3 col-12">
+											<div class=" back  text-white mb-2">
+												<div class="icon mb-3">
+													<img src="assets/img/Icon.svg" alt="" class="img-fluid w-50">
+												</div>
+												<h3>$5k</h3>
+												<h6>Total Sales</h6>
+												<small class="" style="color: rgba(254, 185, 90, 1);">+10% from
+													yesterday</small>
+											</div>
+										</div>
+										<div class="col-md-3 col-12">
+											<div class="back text-white mb-2">
+
+												<div class="icon mb-3">
+													<img src="assets/img/Icon (3).svg" alt="" class="img-fluid w-50">
+												</div>
+												<h4>500</h4>
+												<h6>Total Orders</h6>
+												<small class="" style="color:rgba(169, 223, 216, 1);">+8% from
+													yesterday</small>
+											</div>
+										</div>
+										<div class="col-md-3 col-12">
+											<div class="back text-white mb-2">
+
+												<div class="icon mb-3">
+													<img src="assets/img/Icon (5).svg" alt="" class="img-fluid w-50">
+												</div>
+												<h4>9</h4>
+												<h6>Product Sold</h6>
+												<small class="" style="color: rgba(242, 200, 237, 1);">-2% from
+													yesterday</small>
+											</div>
+										</div>
+										<div class="col-md-3 col-12">
+											<div class="back text-white mb-2">
+
+												<div class="icon mb-3">
+													<img src="assets/img/Icon (4).svg" alt="" class="img-fluid w-50">
+												</div>
+												<h4>12</h4>
+												<h6>New Customers</h6>
+												<small class="" style="color: rgba(32, 174, 243, 1);">+3% from
+													yesterday</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="card1">
+								<div class="text-light">
+									<h3>Level</h3>
+								</div>
+								<div class="mt-4">
+									<img src="assets/img/Bars.svg" alt="" class="img-fluid w-100">
+								</div>
+								<div class="row">
+									<div class="col d-flex justify-content-center mt-4">
+										<ul class="volume">
+											<li class="text-light ">Volume</li>
+										</ul>
+									</div>
+									<div class="col d-flex justify-content-center mt-4">
+										<ul class="service">
+											<li class="text-light ">Service</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section1 mt-3">
+				<div class="content container-fluid ">
+					<div class="row">
+						<div class="col-lg-8 ">
+							<div class="card">
+								<div class=" text-white">
+									<h3 class="card-title text-light">Top Products</h3>
+									<!-- <table class="table ">
+										<thead class="bg-dark">
+											<tr class="">
+												<th scope="col">#</th>
+												<th scope="col">Name</th>
+												<th scope="col">Popularity</th>
+												<th scope="col">Sales</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">01</th>
+												<td>Home Decore Range</td>
+												<td>
+													<div class="progress" role="progressbar"
+														aria-label="Warning example" aria-valuenow="75"
+														aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+														<div class="progress-bar " style="width: 85%; background-color: #FCB859; "></div>
+													</div>
+												</td>
+												<td><span class="badge badge-danger-lighten">46%</span></td>
+											</tr>
+											<tr>
+												<th scope="row">02</th>
+												<td>Disney Princess Dress</td>
+												<td>
+													<div class="progress" role="progressbar"
+														aria-label="Warning example" aria-valuenow="75"
+														aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+														<div class="progress-bar " style="width: 70%; background-color: #A9DFD8; "></div>
+													</div>
+												</td>
+												<td>@fat</td>
+											</tr>
+											<tr>
+												<th scope="row">03</th>
+												<td>Bathroom Essentials</td>
+												<td>
+													<div class="progress" role="progressbar"
+														aria-label="Warning example" aria-valuenow="75"
+														aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+														<div class="progress-bar " style="width: 45%; background-color: #28AEF3;"></div>
+													</div>
+												</td>
+												<td>@fat</td>
+											</tr>
+											<tr>
+												<th scope="row">04</th>
+												<td>Apple Smartwatch</td>
+												<td>
+													<div class="progress" role="progressbar"
+														aria-label="Warning example" aria-valuenow="75"
+														aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+														<div class="progress-bar " style="width: 30%; background-color: #F2C8ED;"></div>
+													</div>
+												</td>
+												<td>@twitter</td>
+											</tr>
+										</tbody>
+									</table> -->
+
+
+									<div class="table-responsive ">
+										<table class="table table-centered table-nowrap mb-0 text-light ">
+											<tbody>
+												<di>
+													<td>
+														<span class=" font-13">#</span>
+
+													</td>
+													<td>
+														<span class=" font-13">Name</span>
+
+													</td>
+													<td>
+														<h5 class="font-14 my-1 "><a href="javascript:void(0);"
+																class="text-light">Popularity</a></h5>
+
+													</td>
+													<td>
+														<span class=" font-13">Sales</span> <br>
+
+													</td>
+
+												</di>
+												<tr>
+													<td>
+														<h5 class=" font-14 mt-1 fw-normal">01</h5>
+													</td>
+													<td>
+														<h5 class="font-14 mt-1 fw-normal">Home Decore Range</h5>
+													</td>
+													<td>
+														<div class="progress mt-3" style="height: 3px; width: 250px;">
+															<div class="progress-bar" role="progressbar"
+																style="width: 70%; height: 20px;" aria-valuenow="65"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+													</td>
+													<td>
+														<span
+															class=" btn btn-box badge badge-danger-lighten d-flex justify-content-center align-items-center">46%</span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">02</h5>
+													</td>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">Disney Princess Dress</h5>
+													</td>
+													<td>
+														<div class="progress mt-3" style="height: 3px;  width: 250px;">
+															<div class="progress-bar1" role="progressbar"
+																style="width: 60%; height: 20px;" aria-valuenow="45"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+													</td>
+													<td>
+														<span
+															class="btn btn-box1 badge badge-success-lighten d-flex justify-content-center align-items-center">17%</span>
+													</td>
+
+												</tr>
+												<tr>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">03</h5>
+													</td>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">Bathroom Essentials</h5>
+													</td>
+													<td>
+														<div class="progress mt-3" style="height: 3px;  width: 250px;">
+															<div class="progress-bar2 " role="progressbar"
+																style="width: 50%; height: 20px;" aria-valuenow="30"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+													</td>
+													<td>
+														<span
+															class="btn btn-box2 badge badge-warning-lighten d-flex justify-content-center align-items-center">19%</span>
+													</td>
+
+												</tr>
+												<tr>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">04</h5>
+													</td>
+													<td>
+
+														<h5 class="font-14 mt-1 fw-normal">Apple Smartwatch</h5>
+													</td>
+													<td>
+														<div class="progress mt-3" style="height: 3px;  width: 250px;">
+															<div class="progress-bar3 " role="progressbar"
+																style="width: 40%; height: 20px;" aria-valuenow="25"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+													</td>
+													<td>
+														<span
+															class="btn btn-box3 badge badge-warning-lighten d-flex justify-content-center align-items-center">29%</span>
+													</td>
+
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="card1">
+								<div class="text-light">
+									<h3>Customer Fulfilment</h3>
+								</div>
+								<div class="mt-4">
+									<img src="assets/img/Graph.svg" alt="" class="img-fluid w-100">
+								</div>
+								<div class="row">
+									<div class="col d-flex justify-content-center mt-4">
+										<ul class="Last text-light">
+											<li>Last Month</li>
+											<p>$4,087</p>
+										</ul>
+									</div>
+									<div class="col d-flex justify-content-center mt-4">
+										<ul class="this text-light">
+											<li>This Month</li>
+											<p>$5,506</p>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section2 mt-3">
+				<div class="content container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="card">
+								<h3>Earnings</h3>
+								<p>Total Expense</p>
+								<div>
+									<h2>$6078.76</h2>
+									<p>Profit is 48% More than last <br> Month</p>
+								</div>
+								<div class="text-center">
+									<img src="assets/img/Percentage meter.svg" alt="" class="img-fluid w-75">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-8">
+							<div class="card1">
+								<div class="d-flex justify-content-between mt-2">
+									<h3>Visitor Insights</h3>
+									<div class="d-flex ">
+										<ul class="new text-light back">
+											<li class="text-light">New Visitors</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="d-flex">
+									<div>
+										<h5 class="mt-2">500</h5>
+										<h5 class="mt-3">400</h5>
+										<h5 class="mt-3">300</h5>
+										<h5 class="mt-3">200</h5>
+										<h5 class="mt-3">100</h5>
+										<h5 class="mt-3">0</h5>
+									</div>
+									<div class="flex-grow-1">
+										<img src="assets/img/king.svg" alt="Visitor Insights Image"
+											class="img-fluid w-100">
+									</div>
+								</div>
+								<div class="d-flex justify-content-between flex-wrap mt-2">
+									<h5 class="m-2">Jan</h5>
+									<h5 class="m-2">Feb</h5>
+									<h5 class="m-2">Mar</h5>
+									<h5 class="m-2">Apr</h5>
+									<h5 class="m-2">May</h5>
+									<h5 class="m-2">Jun</h5>
+									<h5 class="m-2">Jul</h5>
+									<h5 class="m-2">Aug</h5>
+									<h5 class="m-2">Sep</h5>
+									<h5 class="m-2">Oct</h5>
+									<h5 class="m-2">Nov</h5>
+									<h5 class="m-2">Dec</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+	<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/raphael/raphael.min.js"></script>
+	<script src="assets/plugins/morris/morris.min.js"></script>
+	<script src="assets/js/chart.morris.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
